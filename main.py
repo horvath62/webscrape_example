@@ -10,6 +10,8 @@ from webdriver_manager.chrome import ChromeDriverManager
 
 
 driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
+# The install method in the driver make sure any updates to the chrome driver get automatically updated
+# It changes alot!!!
 driver.get('https://scrapingclub.com')
 driver.implicitly_wait(2)
 title = driver.title
