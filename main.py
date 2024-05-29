@@ -12,3 +12,9 @@ from webdriver_manager.chrome import ChromeDriverManager
 driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
 driver.get('https://scrapingclub.com')
 driver.implicitly_wait(2)
+title = driver.title
+print("Web Page Title is")
+print(title)
+driver.close()
+
+
